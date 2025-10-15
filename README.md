@@ -1,5 +1,4 @@
 # Brighttech_Website_2
-# Brighttech_Website_2
 
 BrightTech Website:
 This project is a simple static website built using Gulp, Nunjucks templates, and BrowserSync.
