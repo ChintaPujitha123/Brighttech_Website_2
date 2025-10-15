@@ -1,0 +1,56 @@
+{% extends "layout.njk" %}
+{% block title %}About – BrightTech{% endblock %}
+{% set page = "contact" %}
+
+{% block content %}
+<header class="bg-secondary text-white text-center py-5">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you!</p>
+  </div>
+</header>
+
+<section class="container py-5">
+  <form onsubmit="handleSubmit(event)">
+    <div class="mb-3">
+      <label for="name" class="form-label">Your Name</label>
+      <input type="text" class="form-control" id="name" required />
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="email" required />
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+  </form>
+</section>
+
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="successModalLabel">Message Sent</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        ✅ Your message has been sent successfully!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function handleSubmit(event) {
+    event.preventDefault();
+    const modal = new bootstrap.Modal(document.getElementById('successModal'));
+    modal.show();
+    event.target.reset();
+  }
+</script>
+{% endblock %}

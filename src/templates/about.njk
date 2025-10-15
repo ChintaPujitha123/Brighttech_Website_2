@@ -1,0 +1,62 @@
+{% extends "layout.njk" %}
+{% block title %}About – BrightTech{% endblock %}
+{% set page = "about" %}
+
+{% block content %}
+<section class="bg-light py-5 mission-section">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="text-primary">Our Mission</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <p class="lead fade-in">
+          At BrightTech, our mission is to empower businesses with cutting-edge technology and intuitive design. We believe in innovation, collaboration, and delivering real-world impact through smart solutions that scale.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gradient py-5 services-section text-white">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="text-warning">Our Services</h2>
+    </div>
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6 fade-in-left">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item bg-transparent text-black">Custom Web Applications</li>
+          <li class="list-group-item bg-transparent text-black">AI/ML Model Integration</li>
+          <li class="list-group-item bg-transparent text-black">Cloud Infrastructure Setup</li>
+          <li class="list-group-item bg-transparent text-black">UI/UX Design Consulting</li>
+          <li class="list-group-item bg-transparent text-black">Real-Time Data Dashboards</li>
+          <li class="list-group-item bg-transparent text-black">Security & Performance Optimization</li>
+        </ul>
+      </div>
+      <div class="col-md-6 fade-in-right text-center">
+        <img src="assets/images/services.jpg" alt="Services Illustration" class="img-fluid rounded shadow" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="text-primary">Careers at BrightTech</h2>
+      <p class="lead">Join our mission to build smarter digital solutions.</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <p>
+          We’re always looking for passionate developers, designers, and thinkers who want to make a difference. Whether you're into AI, cloud, or frontend magic — BrightTech is the place to grow.
+        </p>
+        <p class="text-center">
+          📩 Send your resume to <strong>careers@brighttech.com</strong>. We’ll get in touch if there’s a match!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

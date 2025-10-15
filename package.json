@@ -1,0 +1,17 @@
+{
+  "name": "brighttech-task2",
+  "version": "1.0.0",
+  "description": "BrightTech Bootstrap website with Nunjucks and Gulp",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "del": "^6.1.1",
+    "gulp": "^5.0.1",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-plumber": "^1.2.1"
+  }
+}
