@@ -45,7 +45,7 @@ CSS and image files are copied to the dist/assets/ folder.
 BrowserSync automatically refreshes the website when you edit a file.
 
 Images Not Showing?
-Live Link:https://brighttech-website-2-an4j.onrender.com
+Live Link:https://brighttech-website-2-eg8b.onrender.com
 
 Example Pages:
 
